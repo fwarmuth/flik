@@ -1,8 +1,8 @@
 import os, sys
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
-
+# logging.basicConfig(level=logging.DEBUG)
+logging.getLogger('zeep').setLevel(logging.ERROR)
 
 def sessionID():
     from flik.common import storage
